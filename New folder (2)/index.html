@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marriage Proposal</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="proposal-box">
+            <h1>Will you marry me?</h1>
+            <p class="proposal-message">
+                My heart beats for you. You are the one who makes my world brighter, and I want to spend forever with you. 
+                Allah has brought us together, and I can't imagine my life without you. 
+                I hope you say yes to this beautiful journey of togetherness.
+            </p>
+            
+            <!-- Space for her photo -->
+            <div class="photo-container">
+                <label for="upload-photo" class="photo-label">Upload Your Photo Here:</label>
+                <input type="file" id="upload-photo" accept="image/*" onchange="displayPhoto(event)">
+                <img id="photo-display" src="" alt="Your Photo" style="display: none;">
+            </div>
+
+            <!-- Proposal Opinion Form -->
+            <div class="opinion-section">
+                <h2>Your Opinion</h2>
+                <textarea id="opinion-input" placeholder="Please share your thoughts..."></textarea>
+                <button onclick="submitOpinion()">Submit</button>
+                <p id="confirmation-message"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
