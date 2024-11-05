@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const music = document.getElementById('Tum_Hi_Ho_-_Aashiqui_2_128_Kbps.mp3');
+    const music = document.getElementById('bg-music'); // Accessing audio element by ID
     let isPlaying = true;
 
     document.body.addEventListener('click', function() {
