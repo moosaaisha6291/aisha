@@ -1,13 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const music = document.getElementById('bg-music'); // Correct ID reference
-    let isPlaying = true;
+    const music = document.getElementById('bg-music');
+    const playButton = document.getElementById('play-button');
+    let isPlaying = false;
 
-    document.body.addEventListener('click', function() {
+    playButton.addEventListener('click', function() {
         if (isPlaying) {
             music.pause();
+            playButton.textContent = "Play Music";
             isPlaying = false;
         } else {
             music.play();
+            playButton.textContent = "Pause Music";
             isPlaying = true;
         }
     });
